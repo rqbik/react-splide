@@ -2757,7 +2757,7 @@ var Splide2 = class extends React2.Component {
     return /* @__PURE__ */ React2.createElement(Root, {
       className: classNames("splide", className),
       ref: this.splideRef,
-      ...this.omit(props, ["options", ...EVENTS.map((event) => event[1])])
+      ...this.omit(props, ["options", "extensions", "transition", ...EVENTS.map((event) => event[1])])
     }, hasTrack ? /* @__PURE__ */ React2.createElement(SplideTrack, null, children2) : children2);
   }
 };

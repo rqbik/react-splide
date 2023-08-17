@@ -166,7 +166,7 @@ export class Splide extends React.Component<SplideProps> {
       <Root
         className={ classNames( 'splide', className ) }
         ref={ this.splideRef }
-        { ...this.omit( props, [ 'options', ...EVENTS.map( event => event[ 1 ] ) ] ) }
+        { ...this.omit( props, [ 'options', 'extensions', 'transition', ...EVENTS.map( event => event[ 1 ] ) ] ) }
       >
         { hasTrack ? <SplideTrack>{ children }</SplideTrack> : children }
       </Root>
